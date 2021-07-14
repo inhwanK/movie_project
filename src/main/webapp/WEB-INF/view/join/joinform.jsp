@@ -41,6 +41,7 @@
 	        				   memName	   : $('#memName').val(),
 	        				   memPhone	   : $('#memPhone').val()
 	        				   };
+	        var rtn = true;
 	        $.ajax({
 	            url         : contextPath + "/api/joinform/",
 	            type        : "POST",
@@ -48,13 +49,29 @@
 	            datatype    : "json",
 	            cache       : false,
 	            data        : JSON.stringify(newMember),
+	            beforeSend  : function(xhr) {
+	            	if (newMember.memName.search(/\s/) != -1) {
+	            		xhr.abort();	
+	            		alert("이름에 공백이 포함되어 있습니다.");
+	            		$('#memName').focus();
+	            		rtn = false;
+	            	} else if (newMember.memPasswd.search(/\s/) != -1) {
+	            		xhr.abort();	
+	            		alert("비밀번호에 공백이 포함되어 있습니다.");
+	            		$('#memPasswd').val('');
+	            		$('#confmemPasswd').val('');
+	            		rtn = false;
+	            	}
+	            },
 	            success     : function(res) {
-    	                window.location.href = contextPath + "/joinsuccess";
+ 	                window.location.href = contextPath + "/joinsuccess";
 	            },
 	            error       : function(request, status, error){
 	                alert("회원가입 폼을 정확히 입력해주세요");
+	                trn = true;
 	            }
 	        }); 
+	        return rtn;
 	    });
 		
 		<!-- 아이디 중복 확인 -->
