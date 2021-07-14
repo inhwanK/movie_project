@@ -17,7 +17,7 @@ body {
 	padding: 0;
 	text-align: center;
 	margin-right: 17px; /* nav 길이조절 */
-	overflow: hidden; /* 스크롤 x */
+	/* overflow: hidden; 스크롤 x */
 }
 
 a:link {
