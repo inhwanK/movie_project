@@ -16,7 +16,7 @@
 		/* 검색 엔터키 입력시 영화페이지 검색으로 들어감 */
 		function searchMovie() {
 			var contextPath = "${contextPath}";
-			var movTitle = $("#search-box input[type=text]").val();
+			var movTitle = $.trim($("#search-box input[type=text]").val());
 				  
 			if (movTitle != '') {	// 검색 텍스트가 있으면 영화 페이지로 가서 검색 됨
 				window.location.href = contextPath + "/searchMovieList?movTitle=" + movTitle;

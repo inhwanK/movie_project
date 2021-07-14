@@ -278,7 +278,7 @@
 				
 			/* 영화 검색했을때 */
 			$("#btnMovieSearch").on("click", function(){	// 박스 오피스에 들어있는 영화만 검색되도록 함 (상영예정작 탭은 안 바뀌고 검색 안됨)
-				var movTitle = $("#searchMovieName").val();
+				var movTitle = $.trim($("#searchMovieName").val());
 				$.ajax({
 					url			: contextPath + "/api/moviesearch?movTitle="+movTitle,
 					type		:"get",

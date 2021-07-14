@@ -149,6 +149,7 @@ $(function(){
 					success: function(json){
 						if (json.length < 1) {
 							alert('비밀번호가 일치하지 않습니다.');
+							$('#memPasswd').focus();
 							e.preventDefault();
 						} else {
 							alert('수정 완료');
