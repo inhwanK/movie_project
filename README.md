@@ -9,6 +9,8 @@
 <br>
 
 ## 2. 사용 기술
+  - HTML5
+  - CSS3
   - Java 8
   - Spring 5.2.14
   - Gradle
@@ -20,3 +22,4 @@
   - junit
   
 <br>
+
