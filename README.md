@@ -9,7 +9,7 @@
   - CSS3
   - Java 8
   - Spring 5.2.14
-  - Gradle
+  - Gradle 6.3
   - MySql 5.1.49
   - MyBatis 3.5.7
   - JSP
@@ -20,7 +20,6 @@
 
 ## 3. ERD 설계
 ![image](https://user-images.githubusercontent.com/79566221/141672924-045dbfdc-4318-4fa7-ba26-10307d1a99e4.png)
-
 <br>
 
 ## 4. 핵심 기능
@@ -36,3 +35,5 @@
 - 공지사항 및 1:1 문의 관리 (CRUD)
 - 영화 및 상영정보 관리 (CRUD)
 - 매출 통계 조회
+
+### 트러블 슈팅
