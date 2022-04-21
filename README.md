@@ -18,7 +18,7 @@
   
 <br>
 
-## 3. ERD 설계
+## 3. ERD
 ![image](https://user-images.githubusercontent.com/79566221/141672924-045dbfdc-4318-4fa7-ba26-10307d1a99e4.png)
 <br>
 
