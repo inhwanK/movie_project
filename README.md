@@ -5,16 +5,13 @@
 <br>
 
 ## 2. 사용 기술
-  - HTML5
-  - CSS3
+  - HTML5, CSS3, js
   - Java 8
   - Spring 5.2.14
   - Gradle 6.3
   - MySql 5.1.49
   - MyBatis 3.5.7
   - JSP
-  - Ajax
-  - JQuery
   
 <br>
 
